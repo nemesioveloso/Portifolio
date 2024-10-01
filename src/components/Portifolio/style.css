@@ -1,0 +1,28 @@
+.gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+}
+
+.animated-gif {
+    width: 400px;
+    animation: moveUpDown 10s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px rgba(185, 24, 200, 0.7));
+    opacity: 0.85;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(50px);
+        /* Sobe 20px (sobe menos) */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
