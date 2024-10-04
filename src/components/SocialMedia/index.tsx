@@ -1,7 +1,7 @@
 export const SocialMedia = () => {
     return (
         <div style={{
-            display: 'flex', alignItems: 'center', width: '100%', justifyContent: 'space-around', padding: '0.5rem', backgroundColor: 'rgba(17, 17, 17, 0.5)', backdropFilter: 'blur(10px)', borderRadius: '10px'
+            display: 'flex', alignItems: 'center', width: '100%', justifyContent: 'space-around', padding: '0.5rem', backgroundColor: 'rgba(17, 17, 17, 0.5)', backdropFilter: 'blur(1px)', borderRadius: '10px'
         }}>
             <a href="https://www.linkedin.com/in/nemesioveloso/" target="_blank">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" height="35" alt="LinkedIn logo" />
