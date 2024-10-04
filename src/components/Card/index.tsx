@@ -31,6 +31,10 @@ export const NeonCard: React.FC<NeonCardProps> = ({ title, description, link }) 
             borderRadius: '16px',
             position: 'relative',
             padding: '20px',
+            boxShadow: `0 0 10px rgba(255, 0, 255, 0.8),
+                0 0 20px rgb(60, 0, 255),
+                0 0 40px rgba(74, 131, 229, 0.582),
+                0 0 60px rgba(0, 195, 255, 0.2)`,
             '&:before': {
                 content: '""',
                 position: 'absolute',
@@ -40,17 +44,8 @@ export const NeonCard: React.FC<NeonCardProps> = ({ title, description, link }) 
                 bottom: 0,
                 borderRadius: '16px',
                 padding: '2px',
-                background: `linear-gradient(
-                    to bottom,
-                    #30a3c3ae,
-                    rgba(221, 61, 221, 0.5) 75%,
-                    rgba(255, 0, 255, 0) 100%
-                )`,
                 'WebkitMask': 'linear-gradient(to bottom, #000 20%, transparent 90%)',
                 mask: 'linear-gradient(to bottom, #000 20%, transparent 90%)',
-                boxShadow: `0 0 20px rgba(255, 0, 255, 0.8),
-                            0 0 30px rgba(255, 0, 255, 0.6),
-                            0 0 40px rgba(255, 0, 255, 0.4)`
             }
         }}>
             <CardMedia sx={{ textAlign: 'center' }}>

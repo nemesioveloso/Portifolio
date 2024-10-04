@@ -4,6 +4,7 @@ import { NeonCard } from "../Card"
 import { Github } from "../../models/github";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { SocialMedia } from "../SocialMedia";
 
 export const Portifolio = () => {
     const [repositories, setRepositories] = useState<Github[]>([]);
@@ -139,8 +140,13 @@ export const Portifolio = () => {
                     </Typography>
                 </Grid>
             </Grid>
+            <Grid container justifyContent='center'>
+                <Grid item xs={12} sm={6} md={4} lg={3}>
+                    <SocialMedia />
+                </Grid>
+            </Grid>
 
-            <Grid container spacing={1} p={4}>
+            <Grid container spacing={3} p={4}>
                 {repositories.map((repo) => (
                     // Verificação para não renderizar o card se a linguagem for null
                     repo.language && (
